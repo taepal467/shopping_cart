@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+   padding: 10px 20px;
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.nav--title {
+    display: flex;
+    align-items: center;
+}
+
+.nav--title p {
+    margin-top: 12px;
+    padding-left: 7px;
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: 'Italiana', serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.span--item {
+    color: #adb5b5;
+}
+
 .logo {
-    width: 20px;
+    width: 50px;
+}
+
+.nav--list {
+    display: grid;
+    grid-template-columns: repeat(2, 70px) 150px;
+    align-items: center;
+}
+
+.nav--list > li {
+    list-style-type: none;
+    font-family: 'Italiana', serif;
+    letter-spacing: 2px;
+}
+
+.nav--link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav--btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart {
+    width: 40px;
+    height: 35px
 }
