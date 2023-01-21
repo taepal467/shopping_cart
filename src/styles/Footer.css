@@ -1,0 +1,11 @@
+
+.footer--container {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 80px;
+
+}
