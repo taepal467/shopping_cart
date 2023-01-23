@@ -1,0 +1,53 @@
+.hero {
+    display: flex;
+    text-align: center;
+}
+
+.home--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Italiana', serif;
+    padding: 30px;
+}
+
+.header1 {
+    font-size: 3.5rem;
+}
+
+.header2 {
+    font-size: 2.5rem;
+    color: #adb5b5;
+    padding-bottom: 20px;
+}
+
+.hero--btn {
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    padding: 10px;
+    text-transform: capitalize;
+    /* width: 15vw;
+    height: 5vh; */
+}
+
+.img--container {
+    padding: 20px;
+    width: auto;
+}
+
+.hero--img {
+    border-radius: 10px;
+    width: auto;
+}
