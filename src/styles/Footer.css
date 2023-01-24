@@ -74,6 +74,11 @@
     background: none;
     border: none;
     cursor: pointer;
+    font-family: 'Italiana', serif;
+}
+
+.contact--link {
+    text-decoration: underline;
 }
 
 .footer--link:hover,
