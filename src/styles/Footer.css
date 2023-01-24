@@ -1,11 +1,96 @@
 
 .footer--container {
-    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Italiana', serif;
+}
+
+.footer--content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 400px));
     grid-gap: 20px;
     justify-content: space-between;
     align-items: start;
-    padding: 20px 80px;
 
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+    padding: 30px 80px;
 }
+
+.icons--container {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    justify-content: center;
+}
+
+.icon--btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+
+.input {
+    border: 1px solid #adb5b5;
+    border-radius: 10px;
+    padding: 10px ;
+    width: 60%;
+}
+
+.form--btn {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.25rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.newsletter--content,
+.contact--content,
+.footer--link {
+    font-size: .85rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.live--chat {
+    padding: 0 4px;
+}
+
+.footer--list {
+    list-style: none;
+}
+
+.footer--link,
+.contact--link {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer--link:hover,
+.contact--link:hover,
+.github--link:hover {
+    color: #adb5b5;
+}
+
+.small--tag {
+    text-align: center;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.github--link {
+    text-decoration: none;
+    color: black;
+}
+
