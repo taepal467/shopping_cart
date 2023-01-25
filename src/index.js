@@ -7,7 +7,7 @@ import { Shop } from './components/Shop';
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/shopping_cart">
         <Routes>
           <Route path='/' element={ <Navbar /> }>
           <Route index element={ <Home /> } />
