@@ -47,5 +47,17 @@
 
 .hero--img {
     border-radius: 10px;
-    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero--img {
+        border-radius: 10px;
+        width: 450px;
+    }
 }
