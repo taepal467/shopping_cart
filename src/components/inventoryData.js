@@ -1,14 +1,15 @@
-import lv1 from "../assets/lv1.webp";
+import img1 from "./lv1.webp";
 
-const data = [
+const data =  [
     {
-        img:{lv1},
-        name:'Alma BB',
-        prices: {
-            firstPrice: '$1,760',
-            secondPrice:'$352'
-        }
+        id: 1,
+        img:img1,
+        name:'Louis Vuitton Alma BB',
+        firstPrice: 1760,
+        secondPrice:352
+        
     },
 ];
 
 export default data;
+
