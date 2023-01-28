@@ -1,0 +1,23 @@
+.inventory--card {
+    background-color: black;
+    display: grid;
+    grid-template-columns: minmax(min-content, 300px);
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    padding: 15px; */
+    grid-gap: 10px;
+}
+
+.card--img {
+    background-color: purple;
+    width: 350px;
+    height: 400px;
+}
+
+.card--info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: pink;
+}
