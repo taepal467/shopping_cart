@@ -12,7 +12,7 @@ export function Footer() {
                     <form className='form'>
                         <p className='header'>Newsletter</p>
                         <p className='newsletter--content'>Subscribe to receive news from TLDS</p>
-                        <label for="email"></label>
+                        <label htmlFor="email"></label>
                         <input type="email" id="email" placeholder="Enter your email address" className='input'></input>
                         <button type="submit" className='form--btn'>Subscribe</button>
                     </form>
