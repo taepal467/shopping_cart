@@ -9,8 +9,8 @@ const cards = data.map(item => {
     return <Card 
         img={item.img}
         name={item.name}
-        retailPrice={item.firstPrice}
-        tldsPrice={item.secondPrice}
+        prevPrice={item.prevPrice}
+        currentPrice={item.currentPrice}
     />
 })
     return(
