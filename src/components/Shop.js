@@ -16,7 +16,9 @@ const cards = data.map(item => {
 })
     return(
         <div>
-            {cards}
+             <section className="cards-list">
+                {cards}
+            </section>
             <Footer />
         </div>
     );
