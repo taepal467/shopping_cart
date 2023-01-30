@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/shopping_cart/static/css/main.52870f54.css",
-    "main.js": "/shopping_cart/static/js/main.00ac26b2.js",
+    "main.css": "/shopping_cart/static/css/main.32e0b619.css",
+    "main.js": "/shopping_cart/static/js/main.f261e585.js",
     "static/media/lv3.png": "/shopping_cart/static/media/lv3.4eb8cbdcd58e6f86ae92.png",
+    "static/media/chanel5.webp": "/shopping_cart/static/media/chanel5.d19866707465cd73f574.webp",
+    "static/media/chanel3.webp": "/shopping_cart/static/media/chanel3.dc7d5244b00659203ce5.webp",
+    "static/media/chanel2.webp": "/shopping_cart/static/media/chanel2.c5d7d3c28cdbeb9ca3e4.webp",
+    "static/media/chanel4.webp": "/shopping_cart/static/media/chanel4.f7ea603b37c75b2b8de1.webp",
+    "static/media/chanel1.webp": "/shopping_cart/static/media/chanel1.7564727fb819b75d9b4e.webp",
     "static/media/lv4.webp": "/shopping_cart/static/media/lv4.7e16660f383140861bb9.webp",
     "static/media/lv1.webp": "/shopping_cart/static/media/lv1.489938b07938664f75ed.webp",
     "static/media/lv5.webp": "/shopping_cart/static/media/lv5.aea17b7d779fe2f5bc2b.webp",
     "static/media/lv2.webp": "/shopping_cart/static/media/lv2.efb4e4ad5f841d12f0e8.webp",
     "static/media/home-img.avif": "/shopping_cart/static/media/home-img.1bd90375328cfb0e9f3d.avif",
     "index.html": "/shopping_cart/index.html",
-    "main.52870f54.css.map": "/shopping_cart/static/css/main.52870f54.css.map",
-    "main.00ac26b2.js.map": "/shopping_cart/static/js/main.00ac26b2.js.map"
+    "main.32e0b619.css.map": "/shopping_cart/static/css/main.32e0b619.css.map",
+    "main.f261e585.js.map": "/shopping_cart/static/js/main.f261e585.js.map"
   },
   "entrypoints": [
-    "static/css/main.52870f54.css",
-    "static/js/main.00ac26b2.js"
+    "static/css/main.32e0b619.css",
+    "static/js/main.f261e585.js"
   ]
 }
