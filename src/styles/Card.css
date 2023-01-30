@@ -1,5 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600;700&display=swap');
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.card {
+    width: 250px;
+    /* flex: 0 0 auto;          */
+    display: flex;          
+    flex-direction: column; 
+    font-family: 'Cormorant', serif;
+    font-size: 1.3rem;
+}
+
 .card--img {
-    width: 400px;
-    height: 400px;
-    background-color: rgb(241, 240, 240);
+ background-color: 	#f7f7f7;
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.card--item--brand,
+.tlds--price {
+    font-weight: 700;
+}
+
+.card--item--handbag,
+.retail--price {
+ font-size: 1rem;
+}
+
+.retail--price {
+    color: #adb5b5;
 }
