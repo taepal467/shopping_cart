@@ -12,12 +12,12 @@ import chanel3 from "../images/chanel3.webp"
 import chanel4 from "../images/chanel4.webp"
 import chanel5 from "../images/chanel5.webp"
 
-//Birkin
-import berkin1 from "../images/birkin1.webp"
-import berkin2 from "../images/birkin2.webp"
-import berkin3 from "../images/birkin3.webp"
-import berkin4 from "../images/birkin4.webp"
-import berkin5 from "../images/birkin5.webp"
+//Christian Dior
+import dior1 from "../images/dior1.webp"
+import dior2 from "../images/dior2.jpeg"
+import dior3 from "../images/dior3.webp"
+import dior4 from "../images/dior4.webp"
+import dior5 from "../images/dior5.webp"
 
 
 const data =  [
@@ -100,6 +100,46 @@ const data =  [
         handbag:"Chanel 22 Handbag",
         prevPrice: 5000,
         currentPrice: 1000
+    },
+    {
+        id: 11,
+        img:dior1,
+        brandName:"Dior",
+        handbag:"Hobo BucketBag",
+        prevPrice: 6200,
+        currentPrice: 1240
+    },
+    {
+        id: 12,
+        img:dior2,
+        brandName:"Dior",
+        handbag:"Medium Lady D-Lite Bag",
+        prevPrice: 4900,
+        currentPrice: 980
+    },
+    {
+        id: 13,
+        img:dior3,
+        brandName:"Dior",
+        handbag:"30 Montaigne East-West Bag with Chain",
+        prevPrice: 3300,
+        currentPrice: 660
+    },
+    {
+        id: 14,
+        img:dior4,
+        brandName:"Dior",
+        handbag:"Small Lady D-Joy Bag",
+        prevPrice: 4300,
+        currentPrice: 860
+    },
+    {
+        id: 15,
+        img:dior5,
+        brandName:"Dior",
+        handbag:"Small Lady Dior my ABCDior Bag",
+        prevPrice: 5600,
+        currentPrice: 1120
     },
     
 ];
