@@ -19,7 +19,6 @@ import dior3 from "../images/dior3.webp"
 import dior4 from "../images/dior4.webp"
 import dior5 from "../images/dior5.webp"
 
-
 const data =  [
     {
         id: 1,
