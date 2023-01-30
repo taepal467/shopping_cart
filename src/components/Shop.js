@@ -8,7 +8,8 @@ export const Shop = () => {
 const cards = data.map(item => {
     return <Card 
         img={item.img}
-        name={item.name}
+        brandName={item.brandName}
+        handbag={item.handbag}
         prevPrice={item.prevPrice}
         currentPrice={item.currentPrice}
     />
