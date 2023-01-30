@@ -104,9 +104,9 @@ const data =  [
         id: 11,
         img:dior1,
         brandName:"Dior",
-        handbag:"Hobo BucketBag",
-        prevPrice: 6200,
-        currentPrice: 1240
+        handbag:"Small Dior Caro Bag",
+        prevPrice: 3900,
+        currentPrice: 780
     },
     {
         id: 12,
