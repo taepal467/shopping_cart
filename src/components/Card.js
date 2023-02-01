@@ -1,4 +1,6 @@
 import '../styles/Card.css';
+import discount from "../assets/icons8-discount-30.png";
+
 
 export default function Card(props) {
     return (
@@ -8,8 +10,12 @@ export default function Card(props) {
                 <p className="card--item--brand">{props.item.brandName}</p>
                 <p className="card--item--handbag">{props.item.handbag}</p>
                 <p className="retail--price">Retail: ${props.item.prevPrice}</p>
-                <p className="tlds--price">TLDS Price: ${props.item.currentPrice}</p>
+                <p className="tlds--price">
+                <img src={discount} className="discount--img" alt="Discount tag"/>
+                TLDS Price: ${props.item.currentPrice}
+                </p>
             </div>
+            <button>Add to Cart</button>
         </div>
     )
 }
