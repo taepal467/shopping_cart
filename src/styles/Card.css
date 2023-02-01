@@ -12,11 +12,9 @@
 
 .card {
     width: 250px;
-    /* flex: 0 0 auto;          */
     display: flex;          
     flex-direction: column; 
     font-family: 'Cormorant', serif;
-    font-size: 1.3rem;
 }
 
 .card--img {
@@ -26,8 +24,14 @@
     margin-bottom: 9px;
 }
 
-.card--item--brand,
+.card--item--brand {
+    font-weight: 600;
+}
+
 .tlds--price {
+    display: flex;
+    align-items: center;
+    font-size: 1.25;
     font-weight: 700;
 }
 
@@ -38,4 +42,8 @@
 
 .retail--price {
     color: #adb5b5;
+}
+
+.discount--img {
+    width: 20px;
 }
