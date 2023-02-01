@@ -19,7 +19,12 @@ export function Navbar() {
                 <li className="nav--items">
                     <Link to='/shop' className="nav--link">Shop</Link>
                 </li>
-                <button type="button" className="nav--btn"><img src={img} alt="shopping-cart" className="cart"/></button>
+                <button type="button" className="nav--btn">
+              
+                <Link to='/cart'>
+                <img src={img} alt="shopping-cart" className="cart"/>
+                </Link>
+                </button>
             </ul>
         </nav>
 
