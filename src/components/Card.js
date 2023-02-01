@@ -15,7 +15,7 @@ export default function Card(props) {
                 TLDS Price: ${props.item.currentPrice}
                 </p>
             </div>
-            <button>Add to Cart</button>
+            <button type="button" className="card--btn">Add to Cart</button>
         </div>
     )
 }
