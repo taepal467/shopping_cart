@@ -11,11 +11,11 @@ export default function Card(props) {
                 <p className="card--item--handbag">{props.item.handbag}</p>
                 <p className="retail--price">Retail: ${props.item.prevPrice}</p>
                 <p className="tlds--price">
-                <img src={discount} className="discount--img" alt="Discount tag"/>
-                TLDS Price: ${props.item.currentPrice}
+                    <img src={discount} className="discount--img" alt="Discount tag"/>
+                    TLDS Price: ${props.item.currentPrice}
                 </p>
             </div>
-            <button type="button" className="card--btn">Add to Cart</button>
+            <button type="button" onClick={props.onAddItem} className="card--btn">Add to Cart</button>
         </div>
     )
 }
