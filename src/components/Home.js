@@ -11,7 +11,9 @@ export function Home() {
                     <h1 className="header1">Welcome To Tae's Luxury Discount Store</h1>
                     <h2 className="header2">Where Everything is 80% off Retail Price!</h2>
                     <Link to="/shop">
-                        <button type="button" className="hero--btn">Shop Now</button>
+                        <button type="button" className="hero--btn">
+                            Shop Now
+                        </button>
                     </Link>
                 </div>
                     <div className="img--container">
