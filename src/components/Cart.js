@@ -1,4 +1,5 @@
 export function Cart (props) {
+    
     const {cartItems, onAddItem, onRemoveItem} = props;
     console.log("cart component props: ", cartItems)
     return(
