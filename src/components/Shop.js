@@ -1,18 +1,19 @@
 import { Footer } from "./Footer";
-import data from "../components/inventoryData";
 import Card from "./Card";
-import { useState } from "react";
-
+import {Cart} from "./Cart"
 
 export const Shop = (props) => {
-    const { onAddItem } = props;
+    const { data, onAddItem, onRemoveItem } = props;
 
     const cards = data.map(item => {
-        return <Card 
-            key={item.id}
-            item={item}
-            onAddItem={onAddItem}
-        />
+        return (
+            <Card 
+                key={item.id}
+                item={item}
+                onAddItem={onAddItem}
+                onRemoveItem={onRemoveItem}
+            />
+        )
     })
 
     return(
