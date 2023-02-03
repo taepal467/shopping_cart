@@ -10,18 +10,18 @@ export function Home() {
                 <div className="header--container">
                     <h1 className="header1">Welcome To Tae's Luxury Discount Store</h1>
                     <h2 className="header2">Where Everything is 80% off Retail Price!</h2>
-                    <Link to="shopping_cart/shop">
+                    <Link to="/shop">
                     <button type="button" className="hero--btn">Shop Now</button>
                     </Link>
                 </div>
                     <div className="img--container">
                     <img src={img} alt="Gucci Bag" className="hero--img"/>
                     </div>
+                    <Outlet />
             </div>
             <footer>
                 <Footer />
             </footer>
-            <Outlet />
         </div>
     )
 }
