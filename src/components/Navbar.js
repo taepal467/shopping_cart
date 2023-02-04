@@ -3,7 +3,11 @@ import icon from "../assets/icons8-handbag-64.png";
 import img from "../assets/bag.png";
 import "../styles/Navbar.css";
 
-export function Navbar() {
+export function Navbar(props) {
+
+    const {countCartItems} = props;
+    console.log("count cart items: ",props)
+
     return(
         <>
         <nav className="nav">
@@ -19,12 +23,18 @@ export function Navbar() {
                 <li className="nav--items">
                     <Link to='/shop' className="nav--link">Shop</Link>
                 </li>
-                <button type="button" className="nav--btn">
-              
+       
                 <Link to='/cart'>
-                <img src={img} alt="shopping-cart" className="cart"/>
+        
+                    {countCartItems ? (
+                        <button>{countCartItems}</button>
+                    ) : (
+                        ''
+                    )}
+                    <button type="button" className="nav--btn">
+                        <img src={img} alt="shopping-cart" className="cart"/>
+                    </button>
                 </Link>
-                </button>
             </ul>
         </nav>
 
