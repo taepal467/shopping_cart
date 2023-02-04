@@ -1,15 +1,24 @@
+import { Link } from "react-router-dom";
+import {Footer} from "../components/Footer"
 import "../styles/Cart.css";
 
 export function Cart (props) {
 
     const {cartItems, onAddItem, onRemoveItem} = props;
     const total = cartItems.reduce((accumulator, currentValue) => accumulator + currentValue.currentPrice * currentValue.qty, 0)
-    const payments = cartItems.reduce((accumulator, currentValue) => accumulator + currentValue.currentPrice / 4, 0);
+    const payments = cartItems.reduce((accumulator, currentValue) => accumulator + (currentValue.currentPrice * currentValue.qty) / 4, 0);
 
     return(
-        <div>
+        <div className="cart--container">
             <h1 className="cart--header">Order Summary</h1>
-            <div className="cart--subHeader">{cartItems.length === 0 && <div>your bag is empty</div>}</div>
+            <div className="cart--subHeader">
+            {cartItems.length === 0 && <div className="subheader--display">your bag is empty
+                <Link to="/shop">
+                    <button type="button" className="continue--btn">Continue Shopping</button>
+                </Link>
+                </div>
+            }
+            </div>
             {cartItems.map(item => (
                 <div key={item.id} className="cart--items">
                  
@@ -32,15 +41,15 @@ export function Cart (props) {
             {cartItems.length !== 0 && (
                 <div className="cart--total">
                     <h2>Total ${total}</h2>
-                    <p>or 4 interest-free payments of ${payments.toFixed(2)} with <span>klarna</span> <button type="button">learn more</button></p>
+                    <p>or 4 interest-free payments of ${payments.toFixed(2)} with <span className="special--txt">Klarna</span> <button type="button" className="p--btn">learn more</button></p>
+                    <Link to="/shop"><button type="button" className="continue--btn">Continue Shopping</button></Link>
+                    <button type="button" className="checkout--btn">Checkout</button>
                 </div>
             )}
 
-            <div>
-                <button>Continue Shopping</button>
-                <button>Checkout</button>
-            </div>
-           
+           <div>
+            <Footer />
+           </div>
         </div>
     );
 }
