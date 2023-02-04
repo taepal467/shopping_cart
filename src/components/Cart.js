@@ -1,14 +1,17 @@
 export function Cart (props) {
 
     const {cartItems, onAddItem, onRemoveItem} = props;
-    console.log("cart component props: ", cartItems)
+    const total = cartItems.reduce((accumulator, currentValue) => accumulator + currentValue.currentPrice * currentValue.qty, 0)
+
     return(
         <div>
             <h1>Cart Items</h1>
-            <h2>brand name: {props.item}</h2>
             <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
             {cartItems.map(item => (
                 <div key={item.id}>
+            
+                        {/* <img src={item.img} alt={item.brandName}/> */}
+            
                     <div>{item.brandName}</div>
                     <div>
                         <button onClick={() => onAddItem(item)}>+</button>
@@ -17,10 +20,22 @@ export function Cart (props) {
                     <div>
                         {item.qty} x $ {item.currentPrice}
                     </div>
+    
                 </div>
             ))}
+
+   
+            {cartItems.length !== 0 && (
+                <>
+                <hr></hr>
+                {total}
+                </>
+            )}
+           
+             
+
         </div>
     );
 }
 
-// 02/01 -- the "item" Props are not passing through.*Face Palm* 
+
