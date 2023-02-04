@@ -120,7 +120,7 @@ const data =  [
         id: 13,
         img:dior3,
         brandName:"Dior",
-        handbag:"30 Montaigne East-West Bag with Chain",
+        handbag:"Montaigne East-West Bag",
         prevPrice: 3300,
         currentPrice: 660
     },
