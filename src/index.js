@@ -26,21 +26,30 @@ function App() {
 
   const onRemoveItem = (item) => {
     const itemDoesExist = cartItems.find(x => x.id === item.id);
-      if(itemDoesExist) {
+      if(itemDoesExist.qty === 1) {
+        setCartItems(
+          cartItems.filter(x => x.id !== item.id )
+        );
+      } else {
         setCartItems(
           cartItems.map(x => 
               x.id === item.id ? {...itemDoesExist, qty: itemDoesExist.qty - 1} : x
             )
         );
-      } else {
-        setCartItems([...cartItems, {...item, qty: 1}]);
       }
+  }
+
+  const updateCart = (item) => {
+    const itemDoesExist = cartItems.find(x => x.id === item.id);
+    if (itemDoesExist) {
+      cartItems.reduce((accumulator, itemDoesExist) => accumulator + itemDoesExist.qty + 1)
+    }
   }
   
   return (
       <BrowserRouter basename="/shopping_cart">
         <Routes>
-          <Route path='/' element={ <Navbar /> }>
+          <Route path='/' element={ <Navbar countCartItems={cartItems.length} updateCart={updateCart}/> }>
           <Route index element={ <Home /> } />
           <Route path='/shop' element={ <Shop onAddItem={onAddItem} onRemoveItem={onRemoveItem} data={data} /> } />
           <Route path='/cart' element={ <Cart onAddItem={onAddItem} onRemoveItem={onRemoveItem} cartItems={cartItems} /> } />
