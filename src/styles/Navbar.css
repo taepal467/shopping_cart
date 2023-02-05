@@ -7,11 +7,24 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    height: 50px;
+    padding: 40px 20px;
+    transition: top 0.3s;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
-   padding: 10px 20px;
-   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
 }
 
 .nav--title {
@@ -37,8 +50,8 @@
 
 .nav--list {
     display: grid;
-    grid-template-columns: repeat(2, 70px) 150px;
-    align-items: center;
+    grid-template-columns: repeat(2, 70px) 120px;
+    align-items: start;
 }
 
 .nav--list > li {
@@ -57,6 +70,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    margin-top: -10px;
 }
 
 .cart {
@@ -66,8 +80,8 @@
 
 .count--btn {
     position: absolute;
-    top: 10px;
-    right: 130px;
+    top: 20px;
+    right: 100px;
 
     background-color: black;
     border: none;
