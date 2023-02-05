@@ -25,9 +25,8 @@ export function Navbar(props) {
                 </li>
        
                 <Link to='/cart'>
-        
-                    {countCartItems >= 1 ? (
-                        <button>{countCartItems }</button>
+                    {countCartItems ? (
+                        <button type="button" className="count--btn">{countCartItems }</button>
                     ) : (
                         ''
                     )}
