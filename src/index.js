@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar';
 import { Shop } from './components/Shop';
 import {Cart} from './components/Cart'
 import data from "./components/inventoryData";
+import { Checkout } from './components/Checkout';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
           <Route index element={ <Home /> } />
           <Route path='/shop' element={ <Shop onAddItem={onAddItem} onRemoveItem={onRemoveItem} data={data} /> } />
           <Route path='/cart' element={ <Cart onAddItem={onAddItem} onRemoveItem={onRemoveItem} cartItems={cartItems} /> } />
+          <Route path="/checkout" element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>
