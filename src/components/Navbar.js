@@ -6,6 +6,8 @@ import React, { useState } from "react";
 
 export function Navbar(props) {
     const {countCartItems} = props;
+
+    //Fixed NavBar
     const [isFixed, setIsFixed] = useState(false);
 
     const handleScroll = () => {
