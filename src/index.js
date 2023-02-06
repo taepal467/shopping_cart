@@ -40,20 +40,19 @@ function App() {
       }
   }
 
-  const updateCart = (item) => {
-    const itemDoesExist = cartItems.find(x => x.id === item.id);
-    if (itemDoesExist) {
-      cartItems.reduce((accumulator, itemDoesExist) => accumulator + itemDoesExist.qty + 1)
-    }
+  const refreshPage = () => {
+    setTimeout(function(){
+      window.location.reload();
+   }, 1000);
   }
   
   return (
       <BrowserRouter basename="/shopping_cart">
         <Routes>
-          <Route path='/' element={ <Navbar countCartItems={cartItems.length} updateCart={updateCart}/> }>
+          <Route path='/' element={ <Navbar countCartItems={cartItems.length} />}>
           <Route index element={ <Home /> } />
           <Route path='/shop' element={ <Shop onAddItem={onAddItem} onRemoveItem={onRemoveItem} data={data} /> } />
-          <Route path='/cart' element={ <Cart onAddItem={onAddItem} onRemoveItem={onRemoveItem} cartItems={cartItems} /> } />
+          <Route path='/cart' element={ <Cart onAddItem={onAddItem} onRemoveItem={onRemoveItem} refreshPage={refreshPage} cartItems={cartItems} /> } />
           <Route path="/checkout" element={<Checkout />} />
           </Route>
         </Routes>
