@@ -4,7 +4,7 @@ import "../styles/Cart.css";
 
 export function Cart (props) {
 
-    const {cartItems, onAddItem, onRemoveItem} = props;
+    const {cartItems, onAddItem, onRemoveItem, refreshPage} = props;
     const total = cartItems.reduce((accumulator, currentValue) => accumulator + currentValue.currentPrice * currentValue.qty, 0)
     const payments = cartItems.reduce((accumulator, currentValue) => accumulator + (currentValue.currentPrice * currentValue.qty) / 4, 0);
 
@@ -43,7 +43,7 @@ export function Cart (props) {
                     <h2>Total ${total}</h2>
                     <p>or 4 interest-free payments of ${payments.toFixed(2)} with <span className="special--txt">Klarna</span> <button type="button" className="p--btn">learn more</button></p>
                     <Link to="/shop"><button type="button" className="continue--btn">Continue Shopping</button></Link>
-                    <Link to="/checkout"><button type="button" className="checkout--btn">Checkout</button></Link>
+                    <Link to="/checkout"><button type="button" className="checkout--btn" onClick={refreshPage}>Checkout</button></Link>
                 </div>
             )}
 
