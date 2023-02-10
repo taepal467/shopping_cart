@@ -30,7 +30,7 @@ export function Navbar(props) {
 
     return(
         <header >
-        <nav className={` nav navbar ${navbarClass}`}>
+        <nav className={`nav navbar ${navbarClass}`}>
             <div className="nav--title">
                 <img src={icon} alt="Logo" className="logo"/>
                 <p className="title">Tae's <span className="span--item">Luxury</span> Discount Store</p>
@@ -46,11 +46,7 @@ export function Navbar(props) {
        
                 <li className="nav--items">
                 <Link to='/cart'>
-                    {countCartItems ? (
-                        <button type="button" className="count--btn">{countCartItems }</button>
-                    ) : (
-                        ''
-                    )}
+                    {countCartItems ? (<button type="button" className="count--btn">{countCartItems }</button>) : ('')}
                     <button type="button" className="nav--btn">
                         <img src={img} alt="shopping-cart" className="cart"/>
                     </button>
