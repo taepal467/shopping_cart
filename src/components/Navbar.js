@@ -29,7 +29,7 @@ export function Navbar(props) {
     const navbarClass = isFixed ? "fixed" : "";
 
     return(
-        <header >
+        <>
         <nav className={`nav navbar ${navbarClass}`}>
             <div className="nav--title">
                 <img src={icon} alt="Logo" className="logo"/>
@@ -56,6 +56,6 @@ export function Navbar(props) {
         </nav>
 
         <Outlet />
-        </header>
+        </>
     );
 }
