@@ -91,3 +91,21 @@
 }
 
 /* Mobile NavBar */
+
+  
+  @media (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navbar li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .navbar__toggle {
+      display: block;
+    }
+  }
+  
