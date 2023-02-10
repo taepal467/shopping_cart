@@ -6,6 +6,7 @@
 
     font-family: 'Italiana', serif;
     padding: 25px 0;
+    text-align: center;
 }
 
 .checkout--container h1 {
@@ -24,3 +25,4 @@
     font-size: 1rem;
     line-height: 50px;
 }
+
